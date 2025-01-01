@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: Manrope;
+  background-color: hsl(212, 23%, 69%);
+}
+.main-container {
+  display: flex;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 8px;
+  max-width: 720px;
+  box-shadow: 10px 10px 20px hsl(214, 17%, 51%);
+}
+.img-container img {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.inner-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.description {
+  color: hsl(217, 19%, 35%);
+  font-size: 25px;
+}
+.content {
+  color: hsl(214, 17%, 51%);
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 30px;
+}
+.footer-display {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-display img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.details .details1 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+}
+.details .details2 {
+  font-size: 12px;
+  color: hsl(214, 17%, 51%);
+}
+.share-icon {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: end;
+  align-items: end;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: -90px;
+  margin-bottom: 10px;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 8px;
+  gap: 20px;
+  padding: 0 30px;
+  color: hsl(214, 17%, 51%);
+  text-transform: uppercase;
+  cursor: pointer;
+  display: none;
+}
+.socials img {
+  width: 20px;
+  height: 20px;
+}
+.socials img:hover {
+  background-color: gray;
+}
+.triangle {
+  position: absolute;
+  bottom: -10px;
+  background-color: hsl(217, 19%, 35%);
+  left: 50%;
+  transform: translate(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid hsl(210, 46%, 95%);
+  border-right: 10px solid hsl(210, 46%, 95%);
+  border-top: 10px solid hsl(217, 19%, 35%);
+}
+.share-img img {
+  background-color: hsl(210, 11%, 82%);
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 15px;
+}
+#share2 {
+  background-color: hsl(210, 11%, 82%);
+  border-radius: 50%;
+  padding: 10px;
+  display: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+  .img-container img {
+    width: 100%;
+    height: 350px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+  .description {
+    font-size: 30px;
+  }
+  .content {
+    font-size: 22px;
+  }
+
+  .socials {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 340px;
+    background-color: hsl(217, 19%, 35%);
+    transform: translateX(-12.6%);
+    height: 80px;
+    margin-bottom: 0%;
+    align-items: center;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: none;
+  }
+  #share2 {
+    display: block;
+  }
+  .share-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .triangle {
+    display: none;
+  }
+}
